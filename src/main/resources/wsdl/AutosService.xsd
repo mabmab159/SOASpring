@@ -1,0 +1,32 @@
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://mijael.pe/AutosService/schema"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="AutosRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="estado" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="AutosResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="autos" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="id" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                            <xsd:element name="marca" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:string"/>
+                            <xsd:element name="modelo" minOccurs="1" maxOccurs="1" nillable="false"
+                                         type="xsd:string"/>
+                            <xsd:element name="placa" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:string"/>
+                            <xsd:element name="precio" minOccurs="1" maxOccurs="1" nillable="false"
+                                         type="xsd:float"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

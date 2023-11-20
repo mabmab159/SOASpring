@@ -1,0 +1,27 @@
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://mijael.pe/ReservaService/schema"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="ReservaRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="idUsuario" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                <xsd:element name="idVehiculo" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                <xsd:element name="fechaInicio" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:date"/>
+                <xsd:element name="fechaFin" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:date"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ReservaResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="idReserva" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                <xsd:element name="idUsuario" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                <xsd:element name="idVehiculo" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:int"/>
+                <xsd:element name="fechaInicio" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:date"/>
+                <xsd:element name="fechaFin" minOccurs="1" maxOccurs="1" nillable="false" type="xsd:date"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
